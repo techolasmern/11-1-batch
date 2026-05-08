@@ -1,0 +1,10 @@
+HTML -> 
+use -> 
+
+Tag -> A smallest building block. It tells to the browser, how to display content.
+<tagName> </tagName>
+
+<meta>
+<img>
+<br>
+<hr>

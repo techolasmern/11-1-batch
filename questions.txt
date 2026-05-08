@@ -1,0 +1,3 @@
+✔ Create a recipe page with images + lists
+✔ Create a “Tourist Places Page” with images + lists.
+✔ Add images with proper alt text
