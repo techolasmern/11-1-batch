@@ -1,0 +1,14 @@
+Create a 5-page HTML website:
+- Home
+- About
+- Services / Products
+- Gallery
+- Contact (with form)
+
+Use:
+✔ Semantic structure
+✔ Lists
+✔ Table
+✔ Images
+✔ Links
+✔ Forms
