@@ -1,0 +1,12 @@
+css - for styling elements
+- cascading style sheet
+
+How to include css in html
+
+3 ways / method
+
+1. Inline -> tag
+2. Internal -> in html
+3. External -> .css
+
+
