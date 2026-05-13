@@ -1,0 +1,64 @@
+/* Universal Selector */
+
+/* *{
+    color: gray;
+} */
+
+/* ID Selector */
+
+#demo_id{
+    color: blue;
+}
+
+/* Class Selector */
+
+.demo_class{
+    color: red;
+    background-color: black;
+}
+
+/* Tag Selector */
+
+span{
+    color: green;
+}
+
+/* Group Selector */
+
+.p1{
+    background-color: black;
+}
+
+.p2{
+    background-color: red;
+}
+
+.p3{
+    background-color: gray;
+}
+
+.p1, .p2, .p3{
+    color: white;
+}
+
+/* Combinator Selector */
+/* Descendant Combinator */
+
+/* .container p{
+    background-color: yellow;
+} */
+
+/* Child Combinator */
+/* .container > p{
+    background-color: red;
+} */
+
+/* Next Sibling Combinator */
+.container + p{
+    background-color: yellow;
+}
+
+/* SubSequent Sibling Combinator */
+.container ~ .d1{
+    background-color: red;
+}

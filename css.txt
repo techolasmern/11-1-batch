@@ -10,3 +10,18 @@ How to include css in html
 3. External -> .css
 
 
+CSS Selectors - CSS selectors are used to find (or select) the HTML elements you want to style.
+
+- Universal 
+- ID
+- Class
+- Tag
+- Combinator
+    - Descendant (space): Matches all elements that are descendants (children, grandchildren, etc.) 
+                          of a specified element
+    - Child (>): Selects all elements that are direct children of a specified element.
+    - Next Sibling (+): Select an element that is directly after a specific element.
+    - Subsequent-sibling (~): Selects all elements that are next siblings of a specified element.
+- Group
+
+
