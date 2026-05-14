@@ -24,9 +24,15 @@ CSS Selectors - CSS selectors are used to find (or select) the HTML elements you
     - Subsequent-sibling (~): Selects all elements that are next siblings of a specified element.
 - Group
 
+Font properties: size, style, weight, family
 Text properties: color, align, spacing
 Box Model - border, padding, margin, content
-Font properties: size, style, weight, family
 Background properties: color, image, repeat, position
 Borders: width, style, radius,color,border sides, border shorthand
 
+Box Model: The CSS Box Model is a layout model that represents every HTML element as a box containing content, padding, border, and margin.
+
+Content: Text/image/anything
+Padding: space between content and border
+border: outer layer of padding and content, act as an edge of content.
+margin: space outside the border.
