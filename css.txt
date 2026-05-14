@@ -24,4 +24,9 @@ CSS Selectors - CSS selectors are used to find (or select) the HTML elements you
     - Subsequent-sibling (~): Selects all elements that are next siblings of a specified element.
 - Group
 
+Text properties: color, align, spacing
+Box Model - border, padding, margin, content
+Font properties: size, style, weight, family
+Background properties: color, image, repeat, position
+Borders: width, style, radius,color,border sides, border shorthand
 
