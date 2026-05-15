@@ -36,3 +36,4 @@ Content: Text/image/anything
 Padding: space between content and border
 border: outer layer of padding and content, act as an edge of content.
 margin: space outside the border.
+

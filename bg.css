@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}
+
+.container{
+    /* background-image: url("https://img.magnific.com/free-vector/3d-style-black-background-with-paper-layer_206725-669.jpg?semt=ais_hybrid&w=740&q=80"); */
+    /* background-image: url("./image.png"); */
+    height: 100vh;
+    width: 100vw;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    background: url(./image.png) no-repeat center/cover;
+}
