@@ -1,6 +1,6 @@
 /* display - inline, block, inline-block, flex, grid */
 
-.inline{
+/* .inline{
     display: inline;
     height: 200px;
     width: 200px;
@@ -14,4 +14,20 @@
     display: inline-block;
     width: 100px;
     height: 100px;
+} */
+
+.flex{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.flex > div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
