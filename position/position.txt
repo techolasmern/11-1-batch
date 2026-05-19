@@ -1,0 +1,6 @@
+CSS positioning properties determine how elements are placed, stacked, and scrolled on a webpage. 
+
+Relative: Nudges an element from its original position while keeping the space reserved in the document flow.
+Absolute: Removes the element from the document flow, positioning it precisely based on its nearest positioned ancestor.
+Fixed: Anchors an element entirely to the screen (viewport) so it stays visible even when scrolling.
+Sticky: A hybrid that acts relatively while scrolling, then freezes in place once it reaches a defined threshold.
