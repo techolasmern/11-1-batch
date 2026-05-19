@@ -1,0 +1,22 @@
+/* position => relative, absolute, fixed, sticky */
+
+/* relative:  */
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    left: 200px; 
+    /* top: 200px; */
+}
+
+.absolute{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
