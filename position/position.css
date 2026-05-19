@@ -2,6 +2,10 @@
 
 /* relative:  */
 
+*{
+    margin: 0;
+}
+
 .box{
     width: 100px;
     height: 100px;
@@ -38,4 +42,21 @@
     width: 500px;
     position: sticky;
     top: 5px;
+}
+
+.container{
+    position: relative;
+    width: 50vw;
+}
+
+img{
+    width: 100%;
+}
+
+.container section{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    translate: -50%;
+    color: white;
 }
