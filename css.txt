@@ -37,3 +37,7 @@ Padding: space between content and border
 border: outer layer of padding and content, act as an edge of content.
 margin: space outside the border.
 
+z-index controls which element appears on top when elements overlap
+Controls what happens when content is too large for its container.
+Controls transparency of an element.
+Variables store reusable values. Also called custom properties.
