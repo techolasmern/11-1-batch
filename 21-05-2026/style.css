@@ -11,8 +11,6 @@
     width: 200px;
     background-color: red;
     position: absolute;
-    z-index: 1;
-    left: 90px;
 }
 
 .box_2{
@@ -20,7 +18,8 @@
     width: 200px;
     position: absolute;
     background-color: green;
-    left: 30px;
+    left: 60px;
+    z-index: 1;
 }
 
 .box_3{
@@ -28,5 +27,39 @@
     height: 200px;
     width: 200px;
     background-color: blue;
-    z-index: 1;
+    left: 30px;
+}
+
+.box_4 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    left: 90px;
+    z-index: 2;
+    opacity: 1;
+}
+
+.card{
+    width: 350px;
+    border: 2px solid black;
+    padding: 3px;
+}
+
+.card > section{
+    text-align: center;
+}
+
+.card{
+    flex-shrink: 0;
+}
+
+.card > img{
+    width: 100%;;
+}
+
+.card-container{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
 }
