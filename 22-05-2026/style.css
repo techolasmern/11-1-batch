@@ -26,3 +26,25 @@ input:focus{
     border-color: blue;
     border-radius: 10px;
 }
+
+a:link{
+    color: red;;
+}
+
+a:visited{
+    color: gray;
+}
+
+/* psudo elements */
+
+/* first-letter, first-line */
+
+.paragraph::first-letter{
+    font-size: 50px;
+    color: red;
+}
+
+.paragraph::first-line{
+    background-color: red;
+    font-weight: bold;
+}
