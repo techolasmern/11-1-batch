@@ -116,7 +116,16 @@ a:visited{
 
 
 /* number, even, odd, 2n, 3n, n+4, -n+4 */
-ul li:nth-child(-n+5){
-    background-color: red;
+
+ul li:first-child{
+    color: red;
+}
+
+ul li:last-child{
+    color: green;
+}
+
+ul li:nth-child(2n){
+    background-color: black;
 }
 
