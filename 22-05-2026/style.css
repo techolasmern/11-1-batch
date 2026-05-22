@@ -28,7 +28,7 @@ input:focus{
 }
 
 a:link{
-    color: red;;
+    color: red;
 }
 
 a:visited{
@@ -47,4 +47,39 @@ a:visited{
 .paragraph::first-line{
     background-color: red;
     font-weight: bold;
+}
+
+/* before, after */
+
+.psudo::before{
+    content: "🔎";
+}
+
+.psudo::after{
+    content: "📞";
+}
+
+
+
+/* -------------------------------------------- */
+
+.btn{
+    border: none;
+    padding: 5px;
+    padding-inline: 15px;
+    background-color: orangered;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 8px;
+    box-shadow: 1px 1px 0 black;
+    cursor: grab;
+}
+
+.btn:hover{
+    background-color: grey;
+}
+
+.btn:active{
+    box-shadow: none;
+    scale: 0.98;
 }
