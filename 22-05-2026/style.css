@@ -83,3 +83,40 @@ a:visited{
     box-shadow: none;
     scale: 0.98;
 }
+
+.btn-before{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    padding-inline: 16px;
+}
+
+.btn-before::after{
+    content: "🛒";
+}
+
+.btn-before::before{
+    content: "";
+    height: 1.5px;
+    width: 0%;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.btn-before:hover::before{
+    width: 100%;
+}
+
+/* ------------------------------------------------- */
+
+
+/* number, even, odd, 2n, 3n, n+4, -n+4 */
+ul li:nth-child(-n+5){
+    background-color: red;
+}
+
