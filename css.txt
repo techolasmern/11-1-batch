@@ -41,3 +41,6 @@ z-index controls which element appears on top when elements overlap
 Controls what happens when content is too large for its container.
 Controls transparency of an element.
 Variables store reusable values. Also called custom properties.
+
+psudo-class: target an element's state
+psudo-elements: target specific parts of an element or create virtual content

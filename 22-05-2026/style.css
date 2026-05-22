@@ -1,0 +1,28 @@
+/* 
+    psudo-class: target an element's state
+    psudo-elements: target specific parts of an element or create virtual content
+*/
+
+/* hover */
+
+.demo{
+    color: red;
+}
+
+.demo:hover{
+    color: green;
+}
+
+.demo:active{
+    background-color: black;
+}
+
+input{
+    border: 2px solid black;
+    outline: none;
+}
+
+input:focus{
+    border-color: blue;
+    border-radius: 10px;
+}
