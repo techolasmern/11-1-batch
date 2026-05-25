@@ -1,0 +1,44 @@
+/* media query */
+
+/* 
+    <= 576px -> xs
+    > 576px - sm
+    > 768px - md
+    > 992px - lg
+    > 1200px - xl
+    > 1400px > xxl
+*/
+
+body {
+    background-color: black;
+}
+
+@media screen and (min-width: 576px){
+    body{
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 768px){
+    body{
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: gray;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        background-color: yellow;
+    }
+}
