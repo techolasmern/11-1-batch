@@ -8,7 +8,7 @@
     > 1200px - xl
     > 1400px > xxl
 */
-
+/* 
 body {
     background-color: black;
 }
@@ -16,6 +16,18 @@ body {
 @media screen and (min-width: 576px){
     body{
         background-color: red;
+    }
+}
+
+.paragraph{
+    display: none;
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 600px){
+    .paragraph{
+        color: white;
+        display: block;
     }
 }
 
@@ -40,5 +52,44 @@ body {
 @media screen and (min-width: 1400px) {
     body {
         background-color: yellow;
+    }
+} */
+
+*{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 25px;
+    background-color: black;
+    height: 70px;
+    color: white;
+}
+
+header ul{
+    list-style: none;
+    display: none;
+    gap: 25px;
+    cursor: pointer;
+}
+
+header button{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .menu{
+        display: none;
+    }
+
+    header ul{
+        display: flex;
+    }
+
+    header button{
+        display: block;
     }
 }
