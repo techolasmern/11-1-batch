@@ -16,4 +16,12 @@
     transform: translate(-25%, -25%);
 
     scale: 2;
+
+    /* transition: 10000ms;    */
+    /* transition-property: transform; 
+    transition-duration: 10s;
+    transition-timing-function: ease-out;   */
+    
+    transition: transform 5s linear 5s;
+    /* transition-delay: 5s;  */
 }
