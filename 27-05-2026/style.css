@@ -1,0 +1,19 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* scale: 0.5; */
+    /* transform: scaleY(3); */
+    /* transform: rotate(10deg); */
+    /* transform: translate(50%, 50%); */
+    /* 50% / 100 = 2 */
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-25%, -25%);
+
+    scale: 2;
+}
