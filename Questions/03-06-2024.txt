@@ -1,0 +1,5 @@
+Create a navbar. 
+
+· Brand name on the left
+· 3 menu items (Home, About, Contact)
+· Use navbar-light and bg-light
