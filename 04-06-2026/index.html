@@ -1,248 +1,262 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap demo</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap"
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-Commerce Redesign</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-        <style>
-            body{
-                font-family: "Geom", sans-serif;
-            }
-        </style>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img height="30" src="https://cdn.freebiesupply.com/logos/large/2x/flipkart-logo-png-transparent.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Products</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Categories
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Gents</a></li>
-                                <li><a class="dropdown-item" href="#">Kids</a></li>
-                                <li><a class="dropdown-item" href="#">Ladies</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+    <style>
+        body {
+            font-family: "Geom", sans-serif;
+            background-color: #f8f9fa;
+        }
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000" style="height: 600px;">
-                    <img src="https://graphicsfamily.com/wp-content/uploads/edd/2024/11/Creative-E-Commerce-Shoes-Banner-Design-Free-PSD-02-scaled.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000" style="height: 600px;">
-                    <img src="https://i.ytimg.com/vi/9id0Nb-lVlc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDlgfO4TvlWdFM6QJZMdPtFysbguQ" class="d-block w-100 h-100 object-fit-cover" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000" style="height: 600px;">
-                    <img src="https://graphicsfamily.com/wp-content/uploads/edd/2021/07/Professional-E-Commerce-Shoes-Banner-Design-1180x664.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+        /* Custom utility for clean horizontal scrolling without ugly scrollbars if desired */
+        .scroll-wrapper {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .scroll-wrapper::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .scroll-wrapper::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img height="36" src="https://cdn.freebiesupply.com/logos/large/2x/flipkart-logo-png-transparent.png" alt="logo">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll fw-medium">
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="#">Gents</a></li>
+                            <li><a class="dropdown-item" href="#">Kids</a></li>
+                            <li><a class="dropdown-item" href="#">Ladies</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 bg-light border-0 shadow-sm ps-3" type="search" placeholder="Search brands, products..." aria-label="Search" />
+                    <button class="btn btn-primary px-4" type="button">Search</button>
+                </form>
+            </div>
         </div>
+    </nav>
 
-        <h2 class="text-center my-5 text-decoration-underline">Trending Products</h2>
-
-        <div class="d-flex overflow-x-scroll gap-3">
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000" style="height: 500px;">
+                <img src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?auto=format&fit=crop&w=1600&q=80"
+                    class="d-block w-100 h-100 object-fit-cover" alt="Premium Smartphone Banner">
+                <div
+                    class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-4 text-start start-10 bottom-10 max-w-md">
+                    <span class="badge bg-primary mb-2">Exclusive Offer</span>
+                    <h2 class="fw-bold">The Next Generation of Mobile</h2>
+                    <p class="mb-0">Upgrade to unparalleled performance and revolutionary camera setups today.</p>
                 </div>
             </div>
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
+            <div class="carousel-item" data-bs-interval="4000" style="height: 500px;">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1600&q=80"
+                    class="d-block w-100 h-100 object-fit-cover" alt="Smart Tech Eco-system Banner">
+                <div
+                    class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-4 text-start start-10 bottom-10 max-w-md">
+                    <span class="badge bg-success mb-2">New Arrivals</span>
+                    <h2 class="fw-bold">Designed for Intelligent Living</h2>
+                    <p class="mb-0">Explore seamless eco-system connectivity with the newest smart devices.</p>
                 </div>
             </div>
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of
-                        the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of
-                        the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of
-                        the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of
-                        the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of
-                        the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of
-                        the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of
-                        the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of
-                        the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of
-                        the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card flex-shrink-0" style="width: 18rem;">
-                <img src="https://inventstore.in/wp-content/uploads/2024/07/63.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of
-                        the card’s
-                        content.</p>
-                    <a href="#" class="btn btn-primary w-100">Go somewhere</a>
+            <div class="carousel-item" data-bs-interval="4000" style="height: 500px;">
+                <img src="https://img.magnific.com/free-photo/nobody-podcast-production-studio-with-professional-microphone-headphones-streaming-interview-internet-radio-empty-desk-with-streaming-equipment-broadcast-live-show-social-media_482257-48491.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="d-block w-100 h-100 object-fit-cover" alt="Tech Studio Setup Banner">
+                <div
+                    class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-4 text-start start-10 bottom-10 max-w-md">
+                    <span class="badge bg-danger mb-2">Limited Time</span>
+                    <h2 class="fw-bold">Redefine Your Everyday Power</h2>
+                    <p class="mb-0">Get premium financing options and trade-in value bonuses all month long.</p>
                 </div>
             </div>
         </div>
 
-        <div class="d-flex gap-4">
-            <div class="w-100">
-                sldkfslkdfj <br>
-                sdlfkjsldkjflksdfjlksjdf <br>
-                sdlfkjsldkjflksdfjlksjdf <br>
-            </div>
-            <form action="" class="w-100">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                </div>
-            </form>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container-fluid py-5 px-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="fw-bold m-0 text-dark">Trending Products</h3>
+            <span class="badge bg-danger p-2 px-3 rounded-pill">Hot Picks</span>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    </body>
+
+        <div class="d-flex overflow-x-scroll gap-3 pb-3 scroll-wrapper">
+            <div class="card flex-shrink-0 border-0 shadow-sm" style="width: 18rem;">
+                <div class="position-relative">
+                    <img src="https://www.apple.com/v/iphone-17-pro/e/images/overview/welcome/hero__bsveixlwbms2_xlarge.jpg" class="card-img-top p-3 bg-light rounded-top" alt="iPhone 17 Pro Max">
+                    <span class="position-absolute top-0 start-0 m-3 badge bg-danger rounded-pill">Latest Flagship</span>
+                </div>
+                <div class="card-body bg-white rounded-bottom">
+                    <h5 class="card-title text-dark fw-semibold text-truncate">iPhone 17 Pro Max</h5>
+                    <p class="card-text text-muted small text-truncate">A19 Pro Chip, Revolutionary Apple Intelligence & Liquid Titanium finish.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="fw-bold text-primary">$1,199.00</span>
+                        <a href="#" class="btn btn-outline-primary btn-sm px-3 rounded-pill">View Specs</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card flex-shrink-0 border-0 shadow-sm" style="width: 18rem;">
+                <div class="position-relative">
+                    <img src="https://images.macrumors.com/t/B-OH6huBi4ps9IbiRKadZxSPmP4=/800x0/smart/article-new/2025/09/iphone-17-models.jpg?lossy" class="card-img-top p-3 bg-light rounded-top" alt="iPhone 17">
+                    <span class="position-absolute top-0 start-0 m-3 badge bg-primary rounded-pill">New Arrival</span>
+                </div>
+                <div class="card-body bg-white rounded-bottom">
+                    <h5 class="card-title text-dark fw-semibold text-truncate">iPhone 17</h5>
+                    <p class="card-text text-muted small text-truncate">A19 Bionic, vibrant new color finishes, and dynamic 120Hz display upgrade.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="fw-bold text-primary">$799.00</span>
+                        <a href="#" class="btn btn-outline-primary btn-sm px-3 rounded-pill">View Specs</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card flex-shrink-0 border-0 shadow-sm" style="width: 18rem;">
+                <div class="position-relative">
+                    <img src="https://www.iclarified.com/images/news/94911/453964/453964-640.jpg" class="card-img-top p-3 bg-light rounded-top" alt="iPhone 16 Pro">
+                    <span class="position-absolute top-0 start-0 m-3 badge bg-dark rounded-pill">Popular</span>
+                </div>
+                <div class="card-body bg-white rounded-bottom">
+                    <h5 class="card-title text-dark fw-semibold text-truncate">iPhone 16 Pro</h5>
+                    <p class="card-text text-muted small text-truncate">A18 Pro Chip, advanced camera control button, and incredible battery life.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="fw-bold text-primary">$999.00</span>
+                        <a href="#" class="btn btn-outline-primary btn-sm px-3 rounded-pill">View Specs</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card flex-shrink-0 border-0 shadow-sm" style="width: 18rem;">
+                <div class="position-relative">
+                    <img src="https://alexreviewstech.com/wp-content/uploads/2024/10/AppleiPhone16_4-jpg.webp" class="card-img-top p-3 bg-light rounded-top" alt="iPhone 16">
+                    <span class="position-absolute top-0 start-0 m-3 badge bg-success rounded-pill">Great Value</span>
+                </div>
+                <div class="card-body bg-white rounded-bottom">
+                    <h5 class="card-title text-dark fw-semibold text-truncate">iPhone 16</h5>
+                    <p class="card-text text-muted small text-truncate">A18 Processing power, macro photography support, and action button mechanics.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="fw-bold text-primary">$699.00</span>
+                        <a href="#" class="btn btn-outline-primary btn-sm px-3 rounded-pill">View Specs</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card flex-shrink-0 border-0 shadow-sm" style="width: 18rem;">
+                <div class="position-relative">
+                    <img src="https://static0.xdaimages.com/wordpress/wp-content/uploads/2023/09/iphone-15-pro-max-apple-watch-202305738.jpg?w=1600&h=900&fit=crop" class="card-img-top p-3 bg-light rounded-top" alt="iPhone 15 Pro">
+                    <span class="position-absolute top-0 start-0 m-3 badge bg-secondary rounded-pill">Clearance</span>
+                </div>
+                <div class="card-body bg-white rounded-bottom">
+                    <h5 class="card-title text-dark fw-semibold text-truncate">iPhone 15 Pro</h5>
+                    <p class="card-text text-muted small text-truncate">A17 Pro Titanium build, versatile USB-C transfer speeds, and lightweight form factor.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="fw-bold text-primary">$849.00</span>
+                        <a href="#" class="btn btn-outline-primary btn-sm px-3 rounded-pill">View Specs</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card flex-shrink-0 border-0 shadow-sm" style="width: 18rem;">
+                <div class="position-relative">
+                    <img src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2022/09/Person-holding-aa-blue-Apple-iPhone-14.jpg?w=1600&h=900&fit=crop" class="card-img-top p-3 bg-light rounded-top" alt="iPhone 14">
+                    <span class="position-absolute top-0 start-0 m-3 badge bg-light text-dark shadow-sm">Budget Option</span>
+                </div>
+                <div class="card-body bg-white rounded-bottom">
+                    <h5 class="card-title text-dark fw-semibold text-truncate">iPhone 14</h5>
+                    <p class="card-text text-muted small text-truncate">Super Retina XDR display, reliable dual-camera systems, and all-day longevity.</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="fw-bold text-primary">$499.00</span>
+                        <a href="#" class="btn btn-outline-primary btn-sm px-3 rounded-pill">View Specs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white border-top py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-12 col-md-6 text-secondary">
+                    <h4 class="text-dark fw-bold mb-3">Get in Touch with Us</h4>
+                    <p class="mb-1 fw-medium text-dark">Flipkart Marketplace Hub</p>
+                    <p class="small mb-2">123 eCommerce Tech Park, Corporate Boulevard</p>
+                    <p class="small text-muted">Have queries regarding your orders, shipping details, or looking for
+                        business partnerships? Reach out via our modern communication desk.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card border-0 bg-light p-4 shadow-sm">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1"
+                                    class="form-label fw-semibold text-secondary small">Email address</label>
+                                <input type="email" class="form-control border-0 shadow-sm ps-3"
+                                    id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1"
+                                    class="form-label fw-semibold text-secondary small">Your Message</label>
+                                <textarea class="form-control border-0 shadow-sm ps-3" id="exampleFormControlTextarea1"
+                                    rows="3" placeholder="How can we help you?"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary w-100 py-2 fw-medium">Submit Query</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
